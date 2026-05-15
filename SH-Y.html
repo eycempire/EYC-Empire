@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الأزرار العشرة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .buttons-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* بيقسم الأزرار على عمودين */
+            gap: 15px; /* المسافة بين الأزرار */
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-align: center;
+            padding: 12px 20px;
+            background-color: #007bff; /* لون الزرار الأزرق */
+            color: white;
+            text-decoration: none; /* بيشيل الخط اللي تحت اللينك */
+            border-radius: 5px; /* حواف دائرية خفيفة */
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        /* تأثير لما تحرك الماوس فوق الزرار */
+        .btn:hover {
+            background-color: #0056b3; 
+        }
+
+        /* عشان يشتغل تمام على الموبايل ويكونوا تحت بعض */
+        @media (max-width: 480px) {
+            .buttons-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>قائمة المواقع المفضلة</h1>
+
+    <div class="buttons-container">
+        <!-- عدل الـ href باللينك اللي تحبه، وغير "موقع 1" للاسم اللي عايزه -->
+        <a href="https://eycempire.github.io/OPS/index.html" target="_blank" class="btn">SH=Y</a>
+        <a href="https://eycempire.github.io/OPS/admin.html" target="_blank" class="btn">Admin</a>
+
+
+    </div>
+
+</body>
+</html>
